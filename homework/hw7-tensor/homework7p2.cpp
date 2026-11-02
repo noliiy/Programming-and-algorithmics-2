@@ -1,3 +1,10 @@
+/**
+ * PA2 Homework 7 (part 2) - CTensor, dimensions 1-3
+ * 
+ * Extends part 1: tensor and view of dimension 1, 2 or 3 via recursive
+ * template specialisation (CNested<T, N>).
+ */
+
 #ifndef __PROGTEST__
 #include <iostream>
 #include <sstream>

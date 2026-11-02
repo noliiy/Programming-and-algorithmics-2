@@ -1,3 +1,13 @@
+/**
+ * PA2 Homework 4 - CMailBox / CMail
+ * 
+ * Mail server mailbox simulation: folders, mails with attachments,
+ * time-stamp ordering and range queries. Built on std::map/set/list
+ * and polymorphic classes (CMailBody, CAttach).
+ * 
+ * Task statement: homework4.txt
+ */
+
 #ifndef __PROGTEST__
 #include <cstring>
 #include <cstdlib>

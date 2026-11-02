@@ -1,3 +1,9 @@
+/**
+ * PA2 Lab 4 - contact tracking (eRouska-style)
+ * 
+ * CTimeStamp, CContact and CEFaceMask classes for self-tracking of contacts.
+ */
+
 #ifndef __PROGTEST__
 #include <iostream>
 #include <iomanip>

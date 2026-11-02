@@ -1,3 +1,10 @@
+/**
+ * PA2 Homework 7 (part 3) - generic CTensor
+ * 
+ * Final variant: arbitrary-dimension CTensor with views on views,
+ * compile-time dimension tracking and variadic-template slicing.
+ */
+
 #ifndef __PROGTEST__
 #include <iostream>
 #include <sstream>

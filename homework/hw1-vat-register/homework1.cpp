@@ -1,3 +1,13 @@
+/**
+ * PA2 Homework 1 - CVATRegister
+ * 
+ * In-memory tax database. Companies are indexed by tax ID and by (name, address),
+ * with invoice registration, audits and ranking queries. Uses sorted vectors,
+ * binary search and custom comparators for O(log n) lookups.
+ * 
+ * Task statement: homework1.txt
+ */
+
 #ifndef __PROGTEST__
 #include <cstring>
 #include <cstdlib>

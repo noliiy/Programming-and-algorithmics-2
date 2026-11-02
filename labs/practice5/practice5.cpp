@@ -1,3 +1,9 @@
+/**
+ * PA2 Lab 5 - CTime
+ * 
+ * Countdown / time value class with arithmetic and comparison operators.
+ */
+
 #ifndef __PROGTEST__
 #include <iostream>
 #include <iomanip>

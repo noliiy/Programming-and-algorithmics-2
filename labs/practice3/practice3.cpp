@@ -1,3 +1,9 @@
+/**
+ * PA2 Lab 3 - contact tracing
+ * 
+ * Phone-book based contact tracing using vectors, structs and sorting.
+ */
+
 #ifndef __PROGTEST__
 #include <iostream>
 #include <iomanip>

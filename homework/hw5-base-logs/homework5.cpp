@@ -1,3 +1,13 @@
+/**
+ * PA2 Homework 5 - Military base visitor-log analysis
+ * 
+ * Parses entry/exit logs from perimeter gates and reconstructs visits
+ * across a graph of zones connected by internal gates (graph traversal,
+ * event sorting, per-person visit intervals).
+ * 
+ * Task statement: homework5.txt (sample data: base.txt)
+ */
+
 #ifndef __PROGTEST__
 #include <cstring>
 #include <cstdlib>

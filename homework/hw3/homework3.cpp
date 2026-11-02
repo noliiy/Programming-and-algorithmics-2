@@ -1,3 +1,12 @@
+/**
+ * PA2 Homework 3 - CFile
+ * 
+ * Versioned in-memory file with seek/read/write/truncate and undo history.
+ * Data is stored in reference-counted 128-byte blocks (copy-on-write), so
+ * saving a version only duplicates the blocks that actually change.
+ * Manual memory management, no STL containers.
+ */
+
 #ifndef __PROGTEST__
 #include <cassert>
 #include <cstring>

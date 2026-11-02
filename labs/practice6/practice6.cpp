@@ -1,3 +1,9 @@
+/**
+ * PA2 Lab 6 - CLinkedSet
+ * 
+ * Singly linked string set with deep copy, rule of three and manual memory management.
+ */
+
 #ifndef __PROGTEST__
 #include <cstring>
 using namespace std;

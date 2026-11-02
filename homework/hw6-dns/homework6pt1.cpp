@@ -1,3 +1,12 @@
+/**
+ * PA2 Homework 6 (part 1) - DNS server backend
+ * 
+ * DNS zone with polymorphic record types (A, AAAA, MX), a shared
+ * record interface and lookup by name. Uses CIPv4/CIPv6 from ipaddress.h.
+ * 
+ * Task statement: homework6pt1.txt
+ */
+
 #ifndef __PROGTEST__
 #include <cstdio>
 #include <cstdlib>

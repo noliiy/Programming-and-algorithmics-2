@@ -1,3 +1,13 @@
+/**
+ * PA2 Homework 2 - CDate
+ * 
+ * Gregorian calendar date class: arithmetic, comparison (C++20 <=>), stream
+ * I/O and a custom per-stream output format (CDateFormat) stored via
+ * std::ios_base::xalloc / pword with proper copy and cleanup callbacks.
+ * 
+ * Task statement: homework2.txt
+ */
+
 #ifndef __PROGTEST__
 #include <cstdio>
 #include <cstdlib>

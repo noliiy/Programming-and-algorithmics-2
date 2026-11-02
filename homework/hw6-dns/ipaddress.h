@@ -1,3 +1,9 @@
+/**
+ * PA2 Homework 6 - IPv4 / IPv6 address value types
+ * 
+ * Parsing, formatting and comparison of IP addresses used by the DNS backend.
+ */
+
 #ifndef IPADDRESS_H_34805723904562903456203495629034
 #define IPADDRESS_H_34805723904562903456203495629034
 

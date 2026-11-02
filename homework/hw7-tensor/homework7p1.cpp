@@ -1,3 +1,10 @@
+/**
+ * PA2 Homework 7 (part 1) - CTensor, basic variant
+ * 
+ * Generic multidimensional array with templated slicing and views
+ * (CRange / CRangeRev). Variadic templates and parameter-pack indexing.
+ */
+
 #ifndef __PROGTEST__
 #include <iostream>
 #include <sstream>
