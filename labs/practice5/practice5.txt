@@ -1,0 +1,39 @@
+Recently, people are often counting down time (till the end of the quarnatine, the state of emergency, the end of the government term, ...). Sadly, there is not any built-in support for countdowns in the standard C++ library. Therefore, you are about to develop such support in this assignment.
+The task is to develop a C++ class CTime representing time. The class shall conform to the following interface:
+
+default constructor
+The constructor will prepare an empty object.
+constructor with 2 parameters of type int representing hours and minitues
+The constructor will initialize the object with the values given by the integer parameters and set seconds to 0.
+If the parameters does not represent a valid time, the constructor must throw std::invalid_argument. This exception is declared in the standard library (header stdexcept).
+constructor with 3 parameters type int representing hours, minutes and second
+The constructor will initialize the object with the values given by the integer parameters.
+If the parameters does not represent a valid time, the constructor must throw std::invalid_argument. This exception is declared in the standard library (header stdexcept).
+copy constructor, assignment operator, destructor
+Will be present if your internal representation requires it.
+operator+, operator+=
+This operator will add seconds (int) to the passed time.
+operator-, operator-=
+This operator will subtract seconds (int) to the passed time.
+operator-
+This operator will subtract two times and returns the minimum positive number of second between these two times.
+operator++, operator--
+This operator will add (or subtract) one second to the passed time.
+relational operators (<, <=, >, >=, ==, !=)
+Allow compare two times.
+operator<<
+Operator will output an instance of CTime to an output stream (in format HH:MM:SS, single digit hours are padded by a space).
+Submit a source file with your implementation of CBigInt class. The submitted file shall contain any #include directives, class CTimeTester and main function in a conditional compile block (use the attached example).
+
+This task does not provide the required class interface. Instead, you are expected to develop the interface yourself. Use the description above and your knowledge of overloaded operators.
+
+Testing environment expect, that class CTime will use member variables m_Hour, m_Minute and m_Second. Also it except that class CTimeTester have friend access. If you change this part of class, your code does not compile.
+
+Advice
+Valid time accepts hours from 0 to 23, minutes and second from 0 to 59.
+Consider the previous note in computations as well. If at any time during a computation happens that time overflows / underflows to the next / previous day, consider the result modulo 24 hours.
+If your program does not compile (and especially if it compiles locally, however it does not compile in Progtest), there might be some problem in your interface design. Check your operator overloads, pay special attention to const qualifiers.
+Implement the output operator properly -- do not blindly sent the data to cout. Instead, send the data to the output stream passed as the parameter. Avoid unnecessary leading zeros, do not add any whitespace/newline characters.
+The class requires several overloaded operators. Use all C++ features to minimize the number of operators/methods you will actually implement (implicit parameters, ...).
+The task does not require using additional member variables, if you add any or modify existing the class design test will fail.
+The test environment does not work in the same way as the assert function. If your basic test does not pass, you are probably implementing some operators incorrectly (e.g. ++ or --)

@@ -1,0 +1,29 @@
+Once again, COVID-19 plaque is out of control and the anti pandemic measures must be more restrictive. This time, there is a need to better track the contacts. The government is granted an access to each citizen’s mobile and its phone book. Your task is to develop a program to simplify the search in such phone books.
+
+The required function is:
+
+bool report ( const string & fileName, ostream & out );
+fileName is a string with the file name of the phone book to analyze,
+out is an output stream to write the report to,
+return value is true (all processing was OK) or false if there was an error (in file or format).
+The input file is a text file with a list of contacts, an empty line, and a list of searches. Each contact is placed on a single line, the contact consist of a name, surname, and a phone number. The fields are separated by any number of white characters (newline is not used to separate the fields). The searches are formed by a list of names (words) to search for.
+
+Your function finds the records where the name, surname, or both matches the searched string. The strings must match completely, i.e., “Joh” and “John” do not match. The matched records must be printed to the out stream, moreover, the order of records must be preserved. Do not send any output to cout or cerr.
+
+The input / output format is clear from the attached examples. If the input is invalid, return false. The following is considered a formatting error:
+
+a field is missing,
+a phone number is not exactly 9 digits long,
+there is a non-digit character in a phone number,
+a phone number starts with 0,
+there are some extraneous characters following the phone number (white space is fine),
+the empty line separator is missing.
+Notes:
+
+There are example input files attached in the archive.
+The newline character (\n) follows all output lines, including the last output line.
+Your implementation may use std::vector, std::array, and algorithms from the C++ standard library. On the other hand, you are not required to use them, the problem may be solved with just raw arrays.
+It can be useful to use std::getline and/or std::stringstream.
+The task is focused on working with files, so you don't have to worry too much about time or memory complexity.
+Update 8.3.2023 Do not use the std::ws manipulator, it may not work as expected due to the version of the compiler in Progtest. It should not be needed to solve the problem.
+test.cpp

@@ -1,0 +1,14 @@
+Since COVID pandemic is not under control yet, the government introduces new and new restrictions to slow down the spread of the virus. It even resurrected the idea of self tracking by means of mobile phones (eRouška). You are asked to prepare the software needed for this project. Unfortunately, the project leader and SW architect is ill at the moment, thus you have to both design the interface and implement the software.
+
+You are expected to develop 3 classes. The interface is mostly up to you, however, some interface is already fixed (see the attached archive, your implementation must be compatible). The required classes are:
+
+CTimeStamp, the class represents a simple time stamp. The required interface is a constructor to initialize the fields (year/month/day/hour/minute/second). The values passed to the constructor are valid dates/times, your class does not have to validate them.
+CContact is a class to encapsulate a single contact between two people. The people are identified by their respective phone numbers, moreover, there is a timestamp associated with the contact (CTimeStamp).
+CEFaceMask is a class that stores the contacts. The contacts are added via method addContact (method calls can be chained), searching for contacts is provided via method listContacts (method should not update object, should be const). There are two options to call the search method: either with the phone of the infected person, or the phone of the infected person and a time interval. In either case, the method returns a list o phone numbers the person was in contact with (limited to the given time interval in the latter case).
+We represent phone numbers as integers in this task (do not do this in practice, leading zeros are important for phone numbers). The return value of listContacts returns a list of phone numbers. The list must not contain duplicates (do not include the second and all further occurrences of the same number). Next, it is important to list the contacts in the order they were added (contacts made earlier will be listed before contacts made later). Finally, there may be some glitches when filling the database. In particular, the hardware sensors report a contact with itself (the same phone number). Such contacts would be confusing, do not include them in the result.
+
+Notes:
+
+There are example runs and some test data included in the attached archive. (Data are correct, don't modify them otherwise Progtest will not accept your solution.)
+Do not spend time with optimizations. A reasonable implementation of naive algorithms is enough for this assignment.
+Pay attention to the design of the class interface. Do not declare everything public. Use the seminars to consult the design of your classes.

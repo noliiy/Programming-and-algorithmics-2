@@ -1,0 +1,9 @@
+This task is an extension of the basic problem Tensor I. Our recommendation is to implement the basic variant first, then extend it to match Tensor II interface.
+
+The problem to solve is the same, however, the following has changed:
+
+the dimension of the tensor may be 1, 2, or 3,
+the dimension of the view may be 1, 2, or 3.
+Notes:
+Normally, this extra functionality would be an optional test in a single taks. However, a separate task was chosen (technical reasons).
+Submit your solution to both Tensor I and Tensor II, the overall assessment is the sum.

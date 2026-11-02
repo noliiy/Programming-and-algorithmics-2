@@ -1,0 +1,11 @@
+This task is an extension of the basic problem Tensor II. Our recommendation is to implement the basic variant first, then extend it to match Tensor III interface.
+
+The problem to solve is the same, however, the following has changed:
+
+the dimension of the tensor (and view) is no longer restricted,
+the view type is CTensorView<T,DIM> where DIM is the dimension of the view,
+a call to method slice may create a view of dimension 0, i.e., the result is the element itself,
+the program checks that the number of parameters to operator () exactly matches the dimension of the tensor/view.
+Notes:
+The problem is basically a bonus problem, it is present for those interested. Normally, this would be a bonus test, however, a separate task was chosen (technical reasons).
+Advanced template techniques (parameter packs, type traits, requires, type erasure, PIMPL) are needed to pass this assignment. These techniques are beyond the scope of PA2, thus this is a bonus task.
